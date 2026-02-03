@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            vertical-align: top;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            height: 30px;
+            vertical-align: middle;
+            width: 16%;
+        }
+        
+        /* Specific column width for TIME */
+        th:first-child {
+            width: 150px;
+        }
+
+        /* List Styling inside cells */
+        ul {
+            margin: 5px 0 0 15px;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 2px;
+        }
+
+        /* Color Classes */
+        .blue { background-color: #89CFF0; }
+        .pink { background-color: #FFB6C1; }
+        .orange { background-color: #FFA07A; }
+        .teal { background-color: #20B2AA; }
+        .gray { background-color: #778899; color: black; }
+
+        .time-slot {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Class Schedule</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>TIME</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot">7:00 AM - 8:00 AM</td>
+                <td rowspan="3" class="blue">
+                    IT 373
+                    <ul>
+                        <li>activity 1</li>
+                    </ul>
+                </td>
+                <td rowspan="2" class="pink">
+                    IT 313
+                    <ul>
+                        <li>assignment</li>
+                    </ul>
+                </td>
+                <td rowspan="3" class="pink">
+                    IT 313
+                    <ul>
+                        <li>quiz</li>
+                    </ul>
+                </td>
+                <td rowspan="2" class="orange">
+                    IT 333
+                    <ul>
+                        <li>submit code</li>
+                    </ul>
+                </td>
+                <td rowspan="3" class="orange">
+                    IT 333
+                    <ul>
+                        <li>hands-on</li>
+                        <li>recitation</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time-slot">8:00 AM - 9:00 AM</td>
+                </tr>
+
+            <tr>
+                <td class="time-slot">9:00 AM - 10:00 AM</td>
+                <td rowspan="2" class="blue">
+                    IT 373
+                    <ul>
+                        <li>discussion</li>
+                        <li>quiz 1</li>
+                    </ul>
+                </td>
+                
+                <td></td> 
+                
+                </tr>
+
+            <tr>
+                <td class="time-slot">10:00 AM - 11:00 AM</td>
+                <td></td> <td rowspan="3" class="teal">
+                    IT 353
+                    <ul>
+                        <li>discussion</li>
+                        <li>quiz 1</li>
+                    </ul>
+                </td>
+                
+                <td></td> <td rowspan="3" class="gray">
+                    IT 393
+                    <ul>
+                        <li>discussion</li>
+                        <li>quiz 2</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time-slot">11:00 AM - 12:00 NN</td>
+                <td></td> <td rowspan="2" class="teal">
+                    IT 353
+                    <ul>
+                        <li>discussion</li>
+                    </ul>
+                </td>
+                
+                <td rowspan="2" class="gray">
+                    IT 393
+                    <ul>
+                        <li>assignment</li>
+                    </ul>
+                </td>
+                
+                </tr>
+
+            <tr>
+                <td class="time-slot">12:00 NN - 1:00 PM</td>
+                <td></td> </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

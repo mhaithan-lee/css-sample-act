@@ -1,0 +1,166 @@
+/* Reset and Base Styles */
+html, body, div, span, h1, h2, h3, p, img, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Reusable Components */
+.container_yellow {
+    background-color: #fcc302;
+    color: white;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.btn-teal { background: #00bfc4; color: white; }
+.btn-outline { border: 2px solid white; color: white; }
+.btn-yellow { background: #fcc302; color: white; }
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 100px;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.1; 
+    margin-bottom: 25px;
+    color: white;
+    text-align: left;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+}
+
+/* About Section */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grey-text { color: #666; }
+
+.video-placeholder {
+    position: relative;
+    z-index: 1;
+}
+
+.video-placeholder img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.yellow-box-accent {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    background: #fcc302;
+    z-index: 0;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 100px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    border-bottom: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* Add this to the bottom of style.css */
+.center-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.center-header .main-title {
+    text-align: center;
+    margin-left: 0; /* This removes the 99px margin from your original code */
+    margin-top: 20px;
+}
+
+.center-header .description {
+    margin-left: auto;
+    margin-right: auto;
+}
